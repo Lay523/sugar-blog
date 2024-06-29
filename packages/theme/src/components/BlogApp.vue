@@ -57,6 +57,24 @@ const openTransition = useDarkTransitionConfig()
     <template #nav-bar-content-before>
       <slot name="nav-bar-content-before" />
     </template>
+
+    <template #home-hero-info>
+      <slot name="home-hero-info" />
+    </template>
+    <template #home-hero-image>
+      <slot name="home-hero-image" />
+    </template>
+    <template #home-hero-after>
+      <slot name="home-hero-after" />
+    </template>
+    <template #home-features-before>
+      <slot name="home-features-before" />
+    </template>
+    <template #home-features-after>
+      <slot name="home-features-after" />
+    </template>
+
+    
     <!-- 自定义首页 -->
     <template v-if="isBlogTheme" #home-hero-before>
       <slot name="home-hero-before" />
@@ -129,22 +147,7 @@ const openTransition = useDarkTransitionConfig()
     <template #not-found>
       <slot name="not-found" />
     </template>
-    <template #home-hero-info>
-      <slot name="home-hero-info" />
-    </template>
-    <template #home-hero-image>
-      <slot name="home-hero-image" />
-    </template>
-    <template #home-hero-after>
-      <slot name="home-hero-after" />
-    </template>
-    <template #home-features-before>
-      <slot name="home-features-before" />
-    </template>
-    <template #home-features-after>
-      <slot name="home-features-after" />
-    </template>
-
+    
     <template #doc-footer-before>
       <slot name="doc-footer-before" />
     </template>
